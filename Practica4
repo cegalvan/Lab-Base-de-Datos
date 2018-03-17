@@ -1,0 +1,83 @@
+select * from Arena
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('1','Direccion1','Auditorio Banamex')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('2','Direccion2','Auditorio Pabellon M')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('3','Direccion3','Auditorio Telmex')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('4','Direccion4','Domo Care')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('5','Direccion5','Parque fundidora')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('6','Direccion6','Cintermex')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('7','Direccion7','State Farm Arena')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('8','Direccion8','Cafe Iguana')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('9','Direccion9','Lugar1')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('10','Direccion10','Lugar2')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('11','Direccion11','LugarInvalido')
+
+
+update Arena set NombreArena = 'Arena1'
+where idArena= '10'
+
+delete from Arena
+	where idArena= '11'
+
+
+select * from Artistas
+
+insert into Artistas (idArtista,Nombre)
+	values('1','Mark Anthony')
+
+insert into Artistas (idArtista,Nombre)
+	values('2','Lady Gaga')
+
+insert into Artistas (idArtista,Nombre)
+	values('3','Katy Perry')
+
+insert into Artistas (idArtista,Nombre)
+	values('4','Ricky Martin')
+
+insert into Artistas (idArtista,Nombre)
+	values('5','Jay Z')
+
+insert into Artistas (idArtista,Nombre)
+	values('6','Eminem')
+
+insert into Artistas (idArtista,Nombre)
+	values('7','Drake')
+
+insert into Artistas (idArtista,Nombre)
+	values('8','Skrillex')
+
+insert into Artistas (idArtista,Nombre)
+	values('9','Subtact')
+
+insert into Artistas (idArtista,Nombre)
+	values('10','SinNombre')
+
+insert into Artistas (idArtista,Nombre)
+	values('11','ArtistaInvalido')
+
+update Artistas set Nombre = 'ArtistaValido'
+where idArtista= '10'
+
+delete from Artistas
+	where idArtista= '11'
