@@ -1,0 +1,168 @@
+select * from Arena
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('1','Direccion1','Auditorio Banamex')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('2','Direccion2','Auditorio Pabellon M')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('3','Direccion3','Auditorio Telmex')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('4','Direccion4','Domo Care')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('5','Direccion5','Parque fundidora')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('6','Direccion6','Cintermex')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('7','Direccion7','State Farm Arena')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('8','Direccion8','Cafe Iguana')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('9','Direccion9','Lugar1')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('10','Direccion10','Lugar2')
+
+insert into Arena (idArena,Direccion,NombreArena)
+	values('11','Direccion11','LugarInvalido')
+
+
+update Arena set NombreArena = 'Arena1'
+where idArena= '10'
+
+delete from Arena
+	where idArena= '11'
+
+
+select * from Artistas
+
+insert into Artistas (idArtista,Nombre)
+	values('1','Mark Anthony')
+
+insert into Artistas (idArtista,Nombre)
+	values('2','Lady Gaga')
+
+insert into Artistas (idArtista,Nombre)
+	values('3','Katy Perry')
+
+insert into Artistas (idArtista,Nombre)
+	values('4','Ricky Martin')
+
+insert into Artistas (idArtista,Nombre)
+	values('5','Jay Z')
+
+insert into Artistas (idArtista,Nombre)
+	values('6','Eminem')
+
+insert into Artistas (idArtista,Nombre)
+	values('7','Drake')
+
+insert into Artistas (idArtista,Nombre)
+	values('8','Skrillex')
+
+insert into Artistas (idArtista,Nombre)
+	values('9','Subtact')
+
+insert into Artistas (idArtista,Nombre)
+	values('10','SinNombre')
+
+insert into Artistas (idArtista,Nombre)
+	values('11','ArtistaInvalido')
+
+update Artistas set Nombre = 'ArtistaValido'
+where idArtista= '10'
+
+delete from Artistas
+	where idArtista= '11'
+
+
+
+select * from Evento
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('1',NEWID(),NEWID(),'20180325','FLASH')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('2',NEWID(),NEWID(),'20180324','Experiencia Rayada')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('3',NEWID(),NEWID(),'20180322','Loco Por Cantar')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('4',NEWID(),NEWID(),'20180322','The Killers')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('5',NEWID(),NEWID(),'20180412','Siempre Picheo Tour')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('6',NEWID(),NEWID(),'20180421','Pal Norte')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('7',NEWID(),NEWID(),'20180420','Carlos Vives tour')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('8',NEWID(),NEWID(),'20180327','Ozuna')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('9',NEWID(),NEWID(),'20180502','Scorpions.')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('10',NEWID(),NEWID(),'20180509','Invalido')
+
+insert into Evento (idEvento,idArtista,idArena,fecha,NombreEvento)
+	values('11',NEWID(),NEWID(),'20180520','Invalido')
+
+update Evento set NombreEvento = 'Witness the tour.'
+where idEvento= '10'
+
+delete from Evento
+	where idEvento= '11'
+
+
+select * from Lugar
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('1','324','Puerta 10',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('2','243','Puerta 8',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('3','455','Puerta 5',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('4','657','Puerta 3',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('5','675','Puerta 7',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('6','345','Puerta 5',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('7','876','Puerta 3',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('8','324','Puerta 10',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('9','565','Puerta 1',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('10','787','Puerta 7',NEWID())
+
+insert into Lugar (idLugar,NumeroAsiento,Zona,idArena)
+	values('11','434','Puerta 2',NEWID())
+
+update Lugar set Zona = 'Puerta 4'
+where idLugar= '10'
+
+delete from Lugar
+	where idLugar= '11'
