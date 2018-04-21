@@ -1,0 +1,78 @@
+SELECT Direccion FROM Arena
+
+SELECT Nombre FROM Artistas
+
+SELECT idLugar FROM Boleto
+
+SELECT fecha FROM Evento
+
+SELECT numeroasiento FROM Lugar
+
+
+
+SELECT COUNT(idArena) Direccion FROM ARENA 
+GROUP BY Direccion
+
+SELECT COUNT(IdArtista) Nombre FROM Artistas 
+GROUP BY Nombre 
+
+SELECT COUNT(idLugar) idlugar FROM Boleto 
+GROUP BY idLugar
+
+SELECT COUNT(IdEvento) fecha FROM Evento 
+GROUP BY fecha
+
+SELECT COUNT(idLugar) NumeroAsiento FROM Lugar 
+GROUP BY NumeroAsiento
+
+
+SELECT COUNT(idArena) Direccion FROM ARENA 
+ORDER BY COUNT(idArena) DESC;
+
+SELECT COUNT(IdArtista) Nombre FROM Artistas 
+ORDER BY COUNT(idArtista) DESC;
+
+SELECT COUNT(idLugar) idlugar FROM Boleto 
+ORDER BY COUNT(idLugar) DESC;
+
+SELECT COUNT(IdEvento) fecha FROM Evento 
+ORDER BY COUNT(idEvento) DESC;
+
+SELECT COUNT(idLugar) NumeroAsiento FROM Lugar 
+ORDER BY COUNT(idLugar) DESC;
+
+SELECT COUNT(idlugar), numeroasiento
+FROM Lugar
+ORDER BY COUNT(idLugar) DESC;
+
+
+SELECT Direccion FROM Arena
+WHERE Direccion='Direccion1'
+HAVING NombreArena='Auditorio Banamex'
+
+SELECT Nombre FROM Artistas
+WHERE Nombre='Eminem'
+HAVING idArtista='6'
+
+SELECT idlugar FROM Boleto
+WHERE idLugar='2'
+HAVING idBoleto='2'
+
+SELECT fecha FROM Evento
+WHERE fecha='20180420'
+HAVING NombreEvento='Carlos Vives tour'
+
+SELECT NumeroAsiento FROM Lugar
+WHERE NumeroAsiento='565'
+HAVING Zona='Puerta 1'
+
+
+SELECT TOP 5 Direccion FROM Arena
+
+SELECT TOP 3 Nombre FROM Artistas
+
+SELECT TOP 7 idLugar FROM Boleto
+
+SELECT TOP 2 fecha FROM Evento
+
+SELECT TOP 6numeroasiento FROM Lugar
