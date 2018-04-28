@@ -1,1 +1,19 @@
+CREATE VIEW Ejemplo AS 
+SELECT  Direccion, NombreArena
+ FROM dbo.Arena
+ WHERE NombreArena = 'Domo Care';
 
+ Select * from Ejemplo
+
+
+
+CREATE VIEW EJEMPLO2 AS
+SELECT COUNT(*) TotalCount, 
+	b.idEvento,
+	b.fecha 
+from Arena a
+INNER JOIN Evento b on a.idArena = b.idEvento
+WHERE a.Direccion = 'direccion1'
+GROUP BY b.idEvento, b.fecha
+
+Select * from EJEMPLO2
