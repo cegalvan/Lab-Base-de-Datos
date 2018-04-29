@@ -17,3 +17,13 @@ WHERE a.Direccion = 'direccion1'
 GROUP BY b.idEvento, b.fecha
 
 Select * from EJEMPLO2
+
+
+CREATE VIEW EJEMPLO3 AS
+SELECT t2.fecha, t2.NombreEvento, MIN(t1.idLugar)
+from Boleto t1
+inner join Evento t2 on t2.idEvento = t1.idBoleto
+where t1.idLugar = '4'
+group by t2.idEvento, t2.fecha, t2.NombreEvento
+
+SELECT * FROM EJEMPLO3
