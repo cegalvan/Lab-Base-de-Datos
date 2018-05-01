@@ -27,3 +27,13 @@ where t1.idLugar = '4'
 group by t2.idEvento, t2.fecha, t2.NombreEvento
 
 SELECT * FROM EJEMPLO3
+
+
+CREATE VIEW EJEMPLO4 AS
+SELECT t2.Direccion, t2.NombreArena, MAX(t1.idLugar)
+from Lugar t1
+inner join Arena t2 on t2.idArena = t1.idLugar
+where t1.idLugar = '4'
+group by t2.idArena, t2.Direccion, t2.NombreArena
+
+SELECT * FROM EJEMPLO4
