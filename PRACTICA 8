@@ -1,0 +1,60 @@
+create procedure [ReporteNumero1] (@valor1 int)
+as
+begin
+	select * from dbo.Cliente
+	where Edad > @valor1
+end
+exec ReporteNumero1
+
+create procedure [ReporteNumero2] (@valor2 int)
+as
+begin
+	select * from dbo.Lugar 
+	where numeroDeArena > @valor2
+end
+exec ReporteNumero2
+
+
+create procedure [ReporteNumero3] (@valor3 varchar)
+as
+begin
+	select * from dbo.Artistas 
+	where Nombre = @valor3
+end
+exec ReporteNumero3
+
+create procedure [ReporteNumero4] (@valor4 varchar)
+as
+begin
+	select * from dbo.Cliente 
+	where Estadocivil = @valor4
+end
+exec ReporteNumero4
+
+create procedure [ReporteNumero5] (@valor5 int)
+as
+begin
+	select * from dbo.Empleado 
+	where MatriculaDeEmpleado = @valor5
+end
+exec ReporteNumero5
+
+
+Create function 
+returns float
+as 
+begin
+	return @val1 + @val2
+end
+
+select dbo.Venta(450.0000,45.000)
+
+
+create function 
+returns float
+as
+begin
+	return @val3 + @val4
+end
+
+select dbo.Venta(200.0000,25.000)
